@@ -10,7 +10,7 @@ This repository contains the whole code (which was written in .NET and React) an
 For using this web app you need to install and have:
 <li> node
 <li> yarn
-<li> postgreSQL database
+<li> postgreSQL 
 
 After making sure you have all the needed instalations you have to create a new database in PostgreSQL.
 
