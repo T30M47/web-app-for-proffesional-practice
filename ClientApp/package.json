@@ -1,0 +1,62 @@
+{
+    "name": "clientapp",
+    "version": "0.1.0",
+    "homepage": ".",
+    "private": true,
+    "dependencies": {
+        "@ant-design/icons": "^5.1.2",
+        "antd": "5.5.1",
+        "axios": "^1.4.0",
+        "dayjs": "^1.11.8",
+        "mobx": "^6.9.0",
+        "mobx-react-lite": "^3.4.3",
+        "polished": "^4.2.2",
+        "react": "18.2.0",
+        "react-dom": "18.2.0",
+        "react-jwt": "^1.1.8",
+        "react-router-dom": "^6.11.2",
+        "styled-components": "^6.0.0-rc.2",
+        "universal-cookie": "^4.0.4",
+        "uuid": "^9.0.0",
+        "web-vitals": "^3.3.1"
+    },
+    "devDependencies": {
+        "@mobx-devtools/tools": "^0.0.4",
+        "@types/node": "^20.2.3",
+        "@types/react": "^18.2.7",
+        "@types/react-dom": "^18.2.4",
+        "@types/styled-components": "^5.1.26",
+        "@types/uuid": "^9.0.1",
+        "craco-antd": "^2.0.0",
+        "react-scripts": "5.0.1",
+        "typescript": "^5.0.4"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "eact-scripts build",
+        "test": "eact-scripts test",
+        "eject": "react-scripts eject",
+        "update": "yarn upgrade --latest"
+    },
+    "resolutions": {
+        "styled-components": "^5"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    }
+}
