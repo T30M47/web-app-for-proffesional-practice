@@ -31,7 +31,7 @@ Then you have to create a new file inside of the API project and name it "appset
 }
 ```
 
-Here you have to define a secret key for JWT tokens which has a minimum length of 16 characters and connection string for created database in PostgreSQL which usually looks like (change values after "=" to be valid for your implementation):
+Here you have to define a secret key for JWT tokens which has a minimum length of 16 characters and the connection string for created database in PostgreSQL which usually looks like (change values after "=" to be valid for your implementation):
 ```
  "Server=serverName;Port=portNumber;Database=databaseName;User Id=userId;Password=password;"
 ```
@@ -40,7 +40,7 @@ After configuring those settings, open the terminal of your editor and write com
 ```
 cd ClientApp
 ```
-to move to the project of React app and then write command:
+and after moving to the project of the React app write command:
 ```
 yarn install
 ```
