@@ -12,9 +12,9 @@ For using this web app you need to install and have:
 <li> yarn
 <li> postgreSQL 
 
-After making sure you have all the needed instalations you have to create a new database in PostgreSQL.
+After making sure you have all the needed installations you have to create a new database in PostgreSQL.
 
-Then you have to create a new file inside of the API project and name it "appsettings.Development.json" and put the following code inside it:
+Then, after cloning or downloading this repository, you have to create a new file inside of the API project and name it "appsettings.Development.json" and put the following code inside it:
 ```
 {
   "Authentication": {
