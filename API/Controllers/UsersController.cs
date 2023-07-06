@@ -58,7 +58,7 @@ namespace API.Controllers
                 return StatusCode(StatusCodes.Status422UnprocessableEntity, validationErrors);
             }
 
-            if (User.IsInRole("Student"))
+            if (User.IsInRole("Student") || User.IsInRole("Asistent"))
             {
                 if (user_id != user.Id_user)
                 {
