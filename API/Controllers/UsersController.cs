@@ -94,7 +94,7 @@ namespace API.Controllers
             return UserZaBazu?.Adapt<Models.Users.Responses.ResponseUser>();
         }
 
-        [Authorize(Roles = "Administrator, Profesor, Asistent")]
+        [Authorize(Roles = "Administrator, Profesor")]
         [HttpDelete("{Id_user}")]
         public async Task RemoveUser(string Id_user)
         {

@@ -92,7 +92,7 @@ function KorisniciDataTable({ data, isLoading }: KorisniciDataTableProps) {
                                         <BlueButton style={{ width: "70px", margin: "2.5px" }}>Uredi</BlueButton>
                                     </NavLink>
                                 )}
-                                {(((student?.role.includes(Rola.Asistent) && (studentId)) || isAdministrator || (isProfesor && (!record.role.includes(Rola.Administrator) && !record.role.includes(Rola.Profesor))) || (isProfesor && (studentId))) &&
+                                {(( isAdministrator || (isProfesor && (!record.role.includes(Rola.Administrator) && !record.role.includes(Rola.Profesor))) ) &&
                                     <Popconfirm
                                         title="Jeste li sigurni da želite izbrisati korisnika?"
                                         onConfirm={() => korisniciStore.DeleteKorisnika(record.id_user)}
