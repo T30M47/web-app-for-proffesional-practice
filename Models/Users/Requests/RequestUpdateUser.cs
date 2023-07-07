@@ -14,9 +14,9 @@ namespace Models.Users.Requests
         [Required(AllowEmptyStrings = false, ErrorMessage = "Polje {0} ne smije biti prazno!")]
         public string Id_user { get; set; } = null!;
 
-        [Required(AllowEmptyStrings = false, ErrorMessage = "Korisničko ime ne smije biti prazan!")]
-        [StringLength(30, MinimumLength = 3, ErrorMessage = "Korisničko ime mora imati minimalno 3 znakova i maksimalno 30 znakova!")]
-        [RegularExpression(@"^[a-zA-Z0-9]*$", ErrorMessage = "Korisničko ime mora biti kombinacija brojeva ili slova bez razmaka.")]
+        [Required(AllowEmptyStrings = false, ErrorMessage = " ne smije biti prazan!")]
+        [StringLength(30, MinimumLength = 3, ErrorMessage = " mora imati minimalno 3 znakova i maksimalno 30 znakova!")]
+        [RegularExpression(@"^[a-zA-Z0-9]*$", ErrorMessage = " mora biti kombinacija brojeva ili slova bez razmaka.")]
         public string Username { get; set; } = null!;
 
         [Required(AllowEmptyStrings = false, ErrorMessage = "Email ne smije biti prazan!")]
