@@ -38,7 +38,17 @@ namespace API.Controllers
         [HttpPost]
         public async Task<ActionResult<Models.Practices.Responses.ResponsePractice>> AddPractice(Models.Practices.Requests.RequestPractice newEditPractice)
         {
+            var user_id = User.Claims.FirstOrDefault(x => x.Type == "user_id")?.Value;
             var validationErrors = Lib.ModelValidator.ValidateModel(newEditPractice);
+
+            if (User.IsInRole("Student"))
+            {
+                if (user_id != newEditPractice.Id_student)
+                {
+                    return StatusCode(StatusCodes.Status403Forbidden, validationErrors);
+                }
+            }
+            
             if (validationErrors != null)
             {
                 return StatusCode(StatusCodes.Status422UnprocessableEntity, validationErrors);
