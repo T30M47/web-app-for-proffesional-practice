@@ -19,9 +19,9 @@ namespace Models.Practices.Requests
         public string Id_company { get; set; } = null!;
 
         [Required(AllowEmptyStrings = false, ErrorMessage = "Akademska godina ne smije biti prazna")]
-        [MaxLength(9, ErrorMessage = "Akademska godina mora imati točno 9 znakova!")]
-        [MinLength(9, ErrorMessage = "Akademska godina mora imati točno 9 znakova!")]
-        [RegularExpression(@"^\d{4}/\d{4}$", ErrorMessage = "Akademska godina mora imati format YYYY/YYYY")]
+        [MaxLength(11, ErrorMessage = "Akademska godina mora imati točno 11 znakova!")]
+        [MinLength(11, ErrorMessage = "Akademska godina mora imati točno 11 znakova!")]
+        [RegularExpression(@"^\d{4}\./\d{4}\.$", ErrorMessage = "Akademska godina mora imati format YYYY./YYYY.")]
         public string Academic_year { get; set; } = null!;
 
         [Required(AllowEmptyStrings = false, ErrorMessage = "Studij ne smije biti prazan")]
