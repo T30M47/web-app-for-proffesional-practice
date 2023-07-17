@@ -120,7 +120,7 @@ function KorisniciDataTable({ data, isLoading }: KorisniciDataTableProps) {
         <>
          <div style={{display:'flex', justifyContent:'flex-end'} }>
             <Input.Search
-            placeholder="Pretraži studenta po imenu:"
+            placeholder="Pretraži korisnika po imenu i prezimenu:"
             value={upit}
             onChange={(e) => postaviUpit(e.target.value)}
             style={{ marginBottom: '20px', width: '600px' }}
